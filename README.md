@@ -8,16 +8,18 @@ This is a **Playwright automation framework** built with **TypeScript** to valid
 
 ```
 PlaywrightAssignmentKIWI/
+├── node_modules/
+├── env/
+│   └── dev.env (environment-specific variables)
+├── tests/
+│   └── specs(Your Test files)
+│   └── pageObjects(Your Page Objects)
+│   └── testData(Test Data)
 ├── .gitignore
-├── README.md
 ├── package.json
 ├── package-lock.json
 ├── playwright.config.ts
-├── tests/
-│   └── (your test files)
-├── env/
-│   └── dev.env (environment-specific variables)
-└── node_modules/
+└──README.md
 ```
 
 ---
@@ -89,7 +91,7 @@ Environment variables are managed using the `dotenv` package.
 - To add or update environment-specific configurations, edit the files under the `env/` directory.
 - Example:
   ```bash
-  BASE_URL=https://example.com
+  BASE_URL=<Your URL>
   ```
 
 These are dynamically loaded from this line in `playwright.config.ts`:
@@ -106,8 +108,6 @@ dotenv.config({ path: path.resolve(__dirname, `env/${environment}`) });
 ```bash
 TEST_ENV=dev npx playwright test
 ```
-
----
 
 ---
 
