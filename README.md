@@ -8,17 +8,19 @@ This is a **Playwright automation framework** built with **TypeScript** to valid
 
 ```
 PlaywrightAssignmentKIWI/
-├── node_modules/
+├── .github/
+│   └── workflows/
+│       └── playwright.yml (GitHub Actions Script(CI/CD))
 ├── env/
 │   └── dev.env (environment-specific variables)
 ├── tests/
 │   └── specs(Your Test files)
 │   └── pageObjects(Your Page Objects)
-│   └── testData(Test Data)
+│   └── testData(Testdata)
 ├── .gitignore
 ├── package.json
 ├── package-lock.json
-├── playwright.config.ts
+├── playwright.config.ts(Playwright Config File)
 └──README.md
 ```
 
