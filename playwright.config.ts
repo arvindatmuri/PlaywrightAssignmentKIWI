@@ -17,7 +17,7 @@ const environment = process.env.TEST_ENV ? `${process.env.TEST_ENV}.env` : "dev.
 dotenv.config({ path: path.resolve(__dirname, "./env", environment) });
 
 export default defineConfig({
-  testDir: './tests',
+  testDir: './tests/specs',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
