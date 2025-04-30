@@ -17,6 +17,21 @@ test.beforeEach(async ({ page }) => {
 test.describe("Kiwi Saver Calculator End To End", () => {
 
   test('Answer all the questions and give us the projection for growth', async ({ page }) => {
+
+    await test.step("Validate if the Kiwi Calculator Homepage is loaded Successfully", async () => {
+      await homepage.validateTitle();
+    })
+    await test.step("Click on the open Calculator Page", async () => {
+      await homepage.clickOpenCalculator()
+    })
+    await test.step("Validate if the Calculator Page is loaded Successfully", () => {
+
+    })
+
+    await test.step("Validate if the HomePage is loaded Successfully", () => {
+
+    })
+
   });
 
 })
