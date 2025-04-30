@@ -4,11 +4,15 @@
   "main": "index.js",
   "scripts": {},
   "keywords": [],
-  "author": "",
+  "author": "Arvind Atmuri",
   "license": "ISC",
-  "description": "",
+  "description": "This is Playwright Automation Framework written in TypeScript for Validating KiwiCalculator Flow",
   "devDependencies": {
     "@playwright/test": "^1.52.0",
     "@types/node": "^22.15.3"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.5.0"
   }
 }
